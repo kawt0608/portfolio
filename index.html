@@ -1,30 +1,61 @@
-<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="icon" href="data:">
-<title>たいとる</title>
-<link rel="stylesheet" href="index.css">
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポートフォリオ</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <div class=header>
-    <h1>たいとる</h1>
-    <div>せつめいせつめい</div>
-  </div>
-  <div class=main>
-    <div>
-      <h2>さぶたいとる１</h2>
-      <div>
-        ほんぶん１
-      </div>
-    </div>
+    <header>
+        <h1>私のポートフォリオ</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">自己紹介</a></li>
+                <li><a href="#projects">プロジェクト</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div>
-      <h2>さぶたいとる２</h2>
-      <div>
-        ほんぶん２
-      </div>
-    </div>
-  </div>
-  <div class=footer>
-    ふったー
-  </div>
+    <section id="about">
+        <h2>自己紹介</h2>
+        <p>ここに自己紹介のテキストを入れます。あなたの経験やスキルについて述べてください。</p>
+    </section>
+
+    <section id="projects">
+        <h2>プロジェクト</h2>
+        <div class="gallery">
+            <div class="project">
+                <h3>プロジェクト1</h3>
+                <p>プロジェクト1の説明。</p>
+            </div>
+            <div class="project">
+                <h3>プロジェクト2</h3>
+                <p>プロジェクト2の説明。</p>
+            </div>
+            <div class="project">
+                <h3>プロジェクト3</h3>
+                <p>プロジェクト3の説明。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>お問い合わせ</h2>
+        <form action="#" method="post">
+            <label for="name">名前:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">メールアドレス:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">メッセージ:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">送信</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 あなたの名前. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
