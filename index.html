@@ -4,48 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ポートフォリオ</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 0 auto;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background: url('https://source.unsplash.com/1600x400/?nature,water') no-repeat center center/cover;
+            height: 400px;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .content {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .project {
+            flex: 1 0 30%;
+            margin: 15px;
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+        }
+        .project img {
+            width: 100%;
+            height: auto;
+        }
+        .project-description {
+            padding: 15px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>川原斗星のポートフォリオ</h1>
+        <h1>私のポートフォリオ</h1>
+        <nav>
+            <a href="#about">自己紹介</a>
+            <a href="#projects">プロジェクト</a>
+            <a href="#contact">コンタクト</a>
+        </nav>
     </header>
-
-    <section id="about">
-        <h2>自己紹介</h2>
-        <p>大阪公立大学高等工業専門学校2年知能情報コース在籍</p>
-    </section>
-
-    <section id="projects">
-    <h2>プロジェクト</h2>
-    <div class="projects">
-        <div class="project">
-            <img src="images/project1.jpg" alt="プロジェクト1">
-            <div class="project-description">
-                <h3>プロジェクト1</h3>
-                <p>このプロジェクトは最新のウェブ技術を使用して構築されました。</p>
-            </div>
-        </div>
-        <div class="project">
-            <img src="images/project2.jpg" alt="プロジェクト2">
-            <div class="project-description">
-                <h3>プロジェクト2</h3>
-                <p>ここにプロジェクトの詳細を記載します。</p>
-            </div>
-        </div>
-        <div class="project">
-            <img src="images/project3.jpg" alt="プロジェクト3">
-            <div class="project-description">
-                <h3>プロジェクト3</h3>
-                <p>ここにプロジェクトの詳細を記載します。</p>
-            </div>
-        </div>
+    <div class="hero">
+        <h2>クリエイティブなソリューションを提供します</h2>
     </div>
-</section>
-
-
-    <footer>
-        <p>&copy; 2024 川原斗星. All Rights Reserved.</p>
-    </footer>
-</body>
-</html>
+    <div class="content">
+        <section id="about">
+            <h2>自己紹介</h2>
+            <p>こんにちは！私はウェブ開発者の[あなたの名前]です。モダンで直感的なユーザーインターフェースを作ることに情熱を持っています。</p>
+        </section>
+        <section id="projects">
+            <h2>プロジェクト</h2>
+            <div class="projects">
+                <div class="project">
+                    <img src="https://source.unsplash.com/300x200/?website" alt="プロジェクト1">
+                    <div class="project-description">
+                        <h3>プロジェクト1</h3>
+                        <p>このプロジェクトは最新のウェブ技術を使用して構築されました。</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="https://source.unsplash.com/300x200/?app" alt="プロジェクト2">
+                    <div class="project-description">
+                        <h3>プロジェクト2</h3>
+                        <p>ここにプロジェクトの詳細を記載します。</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="https://source.unsplash.com/300x200/?design" alt="プロジェクト3">
+                    <div class="project-description">
+                        <h3>プロジェクト3</h3>
+                        <p>ここにプロジェクトの詳細を記載します。</p>
+                    </div>
+                </div>
+            </div>
+       
