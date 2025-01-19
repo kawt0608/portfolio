@@ -29,7 +29,22 @@
             color: #333;
         }
         .work {
-            margin-bottom: 20px;
+            margin-bottom: 40px;
+        }
+        .screenshots {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .screenshot {
+            flex: 1 0 100px;
+            max-width: 48%;
+        }
+        .screenshot img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
         }
     </style>
 </head>
@@ -54,12 +69,22 @@
         <div class="work">
             <h3>制作物タイトル1</h3>
             <p>この制作物は[説明1]です。</p>
+            <div class="screenshots">
+                <div class="screenshot"><img src="screenshot1-1.jpg" alt="スクリーンショット1-1"></div>
+                <div class="screenshot"><img src="screenshot1-2.jpg" alt="スクリーンショット1-2"></div>
+                <!-- 他のスクリーンショットを追加 -->
+            </div>
             <p>URL: <a href="http://example1.com" target="_blank">http://example1.com</a></p>
         </div>
 
         <div class="work">
             <h3>制作物タイトル2</h3>
             <p>この制作物は[説明2]です。</p>
+            <div class="screenshots">
+                <div class="screenshot"><img src="screenshot2-1.jpg" alt="スクリーンショット2-1"></div>
+                <div class="screenshot"><img src="screenshot2-2.jpg" alt="スクリーンショット2-2"></div>
+                <!-- 他のスクリーンショットを追加 -->
+            </div>
             <p>URL: <a href="http://example2.com" target="_blank">http://example2.com</a></p>
         </div>
         
