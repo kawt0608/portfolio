@@ -152,53 +152,6 @@
                 <ul>
                     <li>アプリケーションの上部に現在の時刻が表示され、1秒ごとに更新されます。</li>
                 </ul>
-                <h4>UI仕様</h4>
-                <ul>
-                    <li>配色およびスタイル:</li>
-                    <ul>
-                        <li>背景: 黒</li>
-                        <li>テキスト: 白および強調用の黄色</li>
-                        <li>ボタン: ダークグレーでホバー時に明るく、クリック時にダークに変化</li>
-                    </ul>
-                    <li>フォントとサイズ:</li>
-                    <ul>
-                        <li>ラベルには"Arial"フォント、ラップリストには"Courier New"フォントを使用。</li>
-                        <li>メインの時間表示フォントサイズやボタンフォントサイズは、ウィンドウサイズに応じて動的に調整。</li>
-                    </ul>
-                </ul>
-                <h4>クラス仕様</h4>
-                <p><strong>Stopwatchクラス</strong></p>
-                <p>継承: QMainWindow</p>
-                <p>属性:</p>
-                <ul>
-                    <li>timer: ストップウォッチ計測用 QTimer。</li>
-                    <li>current_time_timer: 現在時刻表示用 QTimer。</li>
-                    <li>elapsed_time: 計測された経過時間をミリ秒で保持。</li>
-                    <li>lap_times: 記録されたラップタイムリスト。</li>
-                    <li>is_mini_mode: ミニモードの状態フラグ。</li>
-                </ul>
-                <p>メソッド:</p>
-                <ul>
-                    <li>__init__: UIの初期化とタイマーセットアップ。</li>
-                    <li>initMainUI: UIウィジェットの作成および配置。</li>
-                    <li>start_timer: ストップウォッチ開始。</li>
-                    <li>stop_timer: ストップウォッチ停止。</li>
-                    <li>reset_timer: ストップウォッチリセット。</li>
-                    <li>record_lap: ラップタイムの記録およびリストに追加。</li>
-                    <li>toggle_mini_mode: ミニモードとフルモードの切り替え。</li>
-                    <li>update_timer: 経過時間を100msごとに更新。</li>
-                    <li>update_current_time: 1秒ごとに現在時刻を更新。</li>
-                    <li>elapsed_time_format: ミリ秒時間を MM:SS.C形式にフォーマット。</li>
-                    <li>save_lap_times: ラップタイムをファイルとして保存。</li>
-                    <li>resizeEvent: ウィンドウのリサイズに応じてフォントサイズを動的に調整。</li>
-                </ul>
-                <h4>インストールと実行</h4>
-                <p>必要なライブラリのインストール。</p>
-                <pre><code>pip install PySide6</code></pre>
-                <p>`main.py` を実行することでアプリケーションを起動。</p>
-                <pre><code>python main.py</code></pre>
-                <h4>注意事項</h4>
-                <ul>
                     <li>ラップタイムの記録ファイルは、プログラム実行ディレクトリに`laps_YYYYMMDD_HHMMSS.txt`の形式で保存されます。</li>
                     <li>フォントサイズは、ウィンドウをリサイズすることで適切に調整され、UIの美しさを保ちます。</li>
                 </ul>
