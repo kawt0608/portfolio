@@ -116,6 +116,94 @@
             </div>
             <p>プログラムはこちら: <a href="https://github.com/kawt0608/python_game_TK" target="_blank">infection_simulation</a></p>
         </div>
+        <<section id="works">
+        <h2>制作物</h2>
+
+        <div class="work">
+            <h3>Stylish Stopwatch</h3>
+            <div class="description">
+                <p>Stylish Stopwatchは、時計機能とストップウォッチ機能を併せ持つスタイリッシュなデスクトップアプリケーションです。ユーザーは時間を計測し、そのラップタイムを記録および保存することができます。また、ミニモードへの切り替えも可能です。</p>
+                <h4>システム要件</h4>
+                <ul>
+                    <li>開発言語: Python</li>
+                    <li>フレームワーク: PySide6 (Qt for Python)</li>
+                    <li>対応プラットフォーム: デスクトップ (Windows, macOS, Linux)</li>
+                </ul>
+                <h4>機能仕様</h4>
+                <h5>主な機能</h5>
+                <p>ストップウォッチ操作</p>
+                <ul>
+                    <li>Start: ストップウォッチを開始します。計測中に時間が表示されます。</li>
+                    <li>Stop: ストップウォッチを停止します。再びStartを押すと、計測が再開されます。</li>
+                    <li>Reset: すべての計測をクリアし、経過時間とラップタイムリストをリセットします。</li>
+                </ul>
+                <p>ラップタイムの記録</p>
+                <ul>
+                    <li>タイマーがアクティブな間にLapを押すことで、ラップタイムが記録されます。</li>
+                    <li>ラップタイムとその記録日時がリストに表示され、ファイルに保存されます。</li>
+                </ul>
+                <p>モード切替</p>
+                <ul>
+                    <li>Mini Modeボタンにより、フルモードとミニモードを切り替えることができます。</li>
+                    <li>フルモード: すべての操作ボタンとラップリストが表示されます。</li>
+                    <li>ミニモード: 現在時刻と経過時間のみが表示され、画面がシンプルになります。</li>
+                </ul>
+                <p>現在時刻の表示</p>
+                <ul>
+                    <li>アプリケーションの上部に現在の時刻が表示され、1秒ごとに更新されます。</li>
+                </ul>
+                <h4>UI仕様</h4>
+                <ul>
+                    <li>配色およびスタイル:</li>
+                    <ul>
+                        <li>背景: 黒</li>
+                        <li>テキスト: 白および強調用の黄色</li>
+                        <li>ボタン: ダークグレーでホバー時に明るく、クリック時にダークに変化</li>
+                    </ul>
+                    <li>フォントとサイズ:</li>
+                    <ul>
+                        <li>ラベルには"Arial"フォント、ラップリストには"Courier New"フォントを使用。</li>
+                        <li>メインの時間表示フォントサイズやボタンフォントサイズは、ウィンドウサイズに応じて動的に調整。</li>
+                    </ul>
+                </ul>
+                <h4>クラス仕様</h4>
+                <p><strong>Stopwatchクラス</strong></p>
+                <p>継承: QMainWindow</p>
+                <p>属性:</p>
+                <ul>
+                    <li>timer: ストップウォッチ計測用 QTimer。</li>
+                    <li>current_time_timer: 現在時刻表示用 QTimer。</li>
+                    <li>elapsed_time: 計測された経過時間をミリ秒で保持。</li>
+                    <li>lap_times: 記録されたラップタイムリスト。</li>
+                    <li>is_mini_mode: ミニモードの状態フラグ。</li>
+                </ul>
+                <p>メソッド:</p>
+                <ul>
+                    <li>__init__: UIの初期化とタイマーセットアップ。</li>
+                    <li>initMainUI: UIウィジェットの作成および配置。</li>
+                    <li>start_timer: ストップウォッチ開始。</li>
+                    <li>stop_timer: ストップウォッチ停止。</li>
+                    <li>reset_timer: ストップウォッチリセット。</li>
+                    <li>record_lap: ラップタイムの記録およびリストに追加。</li>
+                    <li>toggle_mini_mode: ミニモードとフルモードの切り替え。</li>
+                    <li>update_timer: 経過時間を100msごとに更新。</li>
+                    <li>update_current_time: 1秒ごとに現在時刻を更新。</li>
+                    <li>elapsed_time_format: ミリ秒時間を MM:SS.C形式にフォーマット。</li>
+                    <li>save_lap_times: ラップタイムをファイルとして保存。</li>
+                    <li>resizeEvent: ウィンドウのリサイズに応じてフォントサイズを動的に調整。</li>
+                </ul>
+                <h4>インストールと実行</h4>
+                <p>必要なライブラリのインストール。</p>
+                <pre><code>pip install PySide6</code></pre>
+                <p>`main.py` を実行することでアプリケーションを起動。</p>
+                <pre><code>python main.py</code></pre>
+                <h4>注意事項</h4>
+                <ul>
+                    <li>ラップタイムの記録ファイルは、プログラム実行ディレクトリに`laps_YYYYMMDD_HHMMSS.txt`の形式で保存されます。</li>
+                    <li>フォントサイズは、ウィンドウをリサイズすることで適切に調整され、UIの美しさを保ちます。</li>
+                </ul>
+            </div>
+        </div>
         
         <!-- 追加の制作物は以下に同様に追加 -->
     </section>
